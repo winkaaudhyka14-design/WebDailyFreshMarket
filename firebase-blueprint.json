@@ -1,0 +1,25 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "Product data",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "tgl_masuk": { "type": "string" },
+        "tgl_expired": { "type": "string" },
+        "description": { "type": "string" },
+        "imageUrls": { "type": "array" }
+      },
+      "required": ["id", "name", "category", "tgl_masuk", "tgl_expired", "imageUrls"]
+    }
+  },
+  "firestore": {
+    "products/{productId}": {
+      "schema": "Product",
+      "description": "Store products"
+    }
+  }
+}

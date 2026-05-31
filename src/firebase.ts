@@ -1,0 +1,14 @@
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+
+const firebaseConfig = {
+  projectId: "gen-lang-client-0700537141",
+  appId: "1:634912219846:web:567e3093d5457b4ed8adc7",
+  apiKey: "AIzaSyBf68K7pZIOzL0e0bzTUkn7Ww7Upuydk1I",
+  authDomain: "gen-lang-client-0700537141.firebaseapp.com",
+};
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const db = getFirestore(app, "ai-studio-9bb3f72b-0e95-42dd-bcfd-c190e9b5839f");

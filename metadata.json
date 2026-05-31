@@ -1,0 +1,8 @@
+{
+  "name": "DailyFresh Market",
+  "description": "DailyFresh Market - A fresh food and general foods catalog with an AI-powered nutrition assistant (NutriAI) that calculates calories and suggests delicious recipes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
